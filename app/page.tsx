@@ -41,7 +41,7 @@ export default function Page() {
 
         <div className="max-w-xl space-y-4">
           <p className="text-sm font-semibold text-gray-500 uppercase">
-            Fullstack Engineer
+            Fullstack and Mobile App Developer
           </p>
 
           <h1 className="text-3xl font-bold">
