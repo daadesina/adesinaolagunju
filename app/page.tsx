@@ -64,12 +64,12 @@ export default function Page() {
           </p>
 
           <div className="flex gap-4 pt-4">
-            <Link
-              href="#projects"
+            <a
+              href="https://drive.google.com/file/d/11NgF3WAqXFhk6hOW4p1RepTgsOUScvdT/view?usp=drive_link"
               className="px-5 py-2 rounded-lg bg-black text-white text-sm font-medium hover:bg-gray-800 transition"
             >
-              View Projects
-            </Link>
+              View Resume
+            </a>
 
             <Link
               href="#contact"
