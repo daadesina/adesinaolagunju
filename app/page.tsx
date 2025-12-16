@@ -4,13 +4,19 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 
 import logo from "@/public/images/logo.png"
 import profile_pic from "@/public/images/profile_pic.png"
 import adefinance from "@/public/images/adefinance.png"
 import aice_ui_design from "@/public/images/aice_ui_design.png"
 import cbt_postman from "@/public/images/cbt_postman.png"
+import emergency_news from "@/public/images/emergency_news.png"
+import ubuntu_library from "@/public/images/ubuntu_library.png"
+import adelearning from "@/public/images/adelearning.png"
+
+
+
 
 export default function Page() {
   return (
@@ -51,7 +57,7 @@ export default function Page() {
           <p className="text-gray-700 leading-relaxed">
             I’m a Full Stack & Mobile Developer with proven experience
             designing and deploying scalable web and mobile
-            applications using Python, Django, Express.js, PHP Laravel, React,
+            applications using Python, Django, Flask, Express.js, PHP Laravel, React,
             Next.js, and React Native. Adept at building responsive
             user interfaces, robust backend systems, and cloud
             integrations. Strong problem-solver with a collaborative
@@ -92,6 +98,31 @@ export default function Page() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           {/* ===== Project Card ===== */}
           <ProjectCard
+            image={emergency_news}
+            title="EmergencyNews"
+            description="A full-stack global news aggregator that collects and displays real-time news from 50+ international sources using RSS feeds."
+            stack={[
+              "Next.js",
+              "Django",
+              "Celery Beat",
+              "Redis",
+            ]}
+            live="https://emergency-news2025.vercel.app/"
+            github="https://github.com/ChiAdeTech/EmergencyNews2025.git"
+          />
+
+          <ProjectCard
+            image={ubuntu_library}
+            title="UbuntuLibrary"
+            description="An e-library platform for reading and downloading African-authored books, focused on Pan-African history, culture, and ideology."
+            stack={["Next.js", "Tailwind CSS"]}
+            live="https://ubuntu-library2025.vercel.app/"
+            github="https://github.com/ubuntulibrary/UbuntuLibrary2025.git"
+          />
+
+
+
+          <ProjectCard
             image={adefinance}
             title="AdeFinance"
             description="A personal finance management web app that helps users track income, expenses, and visualize financial data with interactive charts."
@@ -115,6 +146,15 @@ export default function Page() {
             stack={["Laravel", "PHP", "Postman"]}
             github="https://github.com/daadesina/AdeCBT.git"
           />
+
+          <ProjectCard
+            image={adelearning}
+            title="AdeLearning"
+            description="A mobile learning app built with React Native and Expo featuring user authentication and a personalized dashboard."
+            stack={["React Native", "Expo"]}
+            github="https://github.com/daadesina/AdeLearning.git"
+          />
+
         </div>
       </section>
       
@@ -132,11 +172,11 @@ export default function Page() {
 
           {/* Contact Cards */}
           
-          <div className="grid sm:grid-cols-3 gap-6 mt-10">
+          <div className="flex flex-col md:flex-row flex-wrap justify-center gap-6 mt-10 ">
             {/* Email */}
             <a
               href="mailto:daadesina1@gmail.com"
-              className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
+              className="flex md:w-[30%] w-full flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
             >
               <FaEnvelope className="text-2xl" />
               <div>
@@ -152,7 +192,7 @@ export default function Page() {
               href="https://github.com/daadesina"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
+              className="flex md:w-[30%] w-full flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
             >
               <FaGithub className="text-2xl" />
               <div>
@@ -168,7 +208,7 @@ export default function Page() {
               href="https://www.linkedin.com/in/daadesina/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
+              className="flex md:w-[30%] w-full flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
             >
               <FaLinkedin className="text-2xl" />
               <div>
@@ -178,6 +218,23 @@ export default function Page() {
                 </p>
               </div>
             </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/2348103230934"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex md:w-[30%] w-full flex-col items-center text-center gap-3 p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
+            >
+              <FaWhatsapp className="text-2xl" />
+              <div>
+                <p className="font-semibold">WhatsApp</p>
+                <p className="text-sm text-gray-600">
+                  +234 810 323 0934
+                </p>
+              </div>
+            </a>
+
           </div>
         </section>
       </div>
