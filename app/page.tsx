@@ -34,58 +34,60 @@ export default function Page() {
       </nav>
 
       {/* ================= HERO / ABOUT ================= */}
-      <section
-        id="about"
-        className="flex flex-col md:flex-row items-center gap-10 mt-24"
-      >
-        <Image
-          src={profile_pic}
-          alt="Abdullah Adesina"
-          className="w-56 h-auto rounded-2xl"
-          priority
-        />
+      <div className="flex justify-center">
+        <section
+          id="about"
+          className="flex flex-col w-fit md:flex-row items-center gap-10 mt-24 "
+        >
+          <Image
+            src={profile_pic}
+            alt="Abdullah Adesina"
+            className="w-60 md:w-70 h-auto rounded-2xl"
+            priority
+          />
 
-        <div className="max-w-xl space-y-4">
-          <p className="text-sm font-semibold text-gray-500 uppercase">
-            Fullstack and Mobile App Developer
-          </p>
+          <div className="max-w-xl space-y-4">
+            <p className="text-sm font-semibold text-gray-500 uppercase">
+              Fullstack and Mobile App Developer
+            </p>
 
-          <h1 className="text-3xl font-bold">
-            Hi, I’m Adesina Olagunju
-          </h1>
+            <h1 className="text-3xl font-bold">
+              Hi, I’m Adesina Olagunju
+            </h1>
 
-          <p className="text-gray-700 leading-relaxed">
-            I’m a Full Stack & Mobile Developer with proven experience
-            designing and deploying scalable web and mobile
-            applications using Python, Django, Flask, Express.js, PHP Laravel, React,
-            Next.js, and React Native. Adept at building responsive
-            user interfaces, robust backend systems, and cloud
-            integrations. Strong problem-solver with a collaborative
-            mindset, eager to drive impactful digital solutions.
-          </p>
+            <p className="text-gray-700 leading-relaxed">
+              I’m a Full Stack & Mobile Developer with proven experience
+              designing and deploying scalable web and mobile
+              applications using Python, Django, Flask, Express.js, PHP Laravel, React,
+              Next.js, and React Native. Adept at building responsive
+              user interfaces, robust backend systems, and cloud
+              integrations. Strong problem-solver with a collaborative
+              mindset, eager to drive impactful digital solutions.
+            </p>
 
-          <p className="text-gray-700 leading-relaxed">
-            I enjoy building impactful digital solutions that solve real-world
-            problems—especially across Africa.
-          </p>
+            <p className="text-gray-700 leading-relaxed">
+              I enjoy building impactful digital solutions that solve real-world
+              problems—especially across Africa.
+            </p>
 
-          <div className="flex gap-4 pt-4">
-            <a
-              href="https://drive.google.com/file/d/11NgF3WAqXFhk6hOW4p1RepTgsOUScvdT/view?usp=drive_link"
-              className="px-5 py-2 rounded-lg bg-black text-white text-sm font-medium hover:bg-gray-800 transition"
-            >
-              View Resume
-            </a>
+            <div className="flex gap-4 pt-4">
+              <a
+                href="https://drive.google.com/file/d/11NgF3WAqXFhk6hOW4p1RepTgsOUScvdT/view?usp=drive_link"
+                className="px-5 py-2 rounded-lg bg-black text-white text-sm font-medium hover:bg-gray-800 transition"
+              >
+                View Resume
+              </a>
 
-            <Link
-              href="#contact"
-              className="px-5 py-2 rounded-lg border border-gray-300 text-sm font-medium hover:bg-gray-100 transition"
-            >
-              Contact Me
-            </Link>
+              <Link
+                href="#contact"
+                className="px-5 py-2 rounded-lg border border-gray-300 text-sm font-medium hover:bg-gray-100 transition"
+              >
+                Contact Me
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* ================= PROJECTS ================= */}
       <section id="projects" className="mt-32">
