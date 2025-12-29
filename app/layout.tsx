@@ -29,6 +29,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Adesina Olagunju",
+              jobTitle: "Full-Stack & Mobile Developer",
+              url: "https://your-vercel-domain.vercel.app",
+              sameAs: [
+                "https://www.linkedin.com/in/daadesina",
+                "https://github.com/daadesina",
+              ],
+            }),
+          }}
+        />
+
         {children}
       </body>
     </html>
